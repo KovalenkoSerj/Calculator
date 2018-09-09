@@ -1,0 +1,69 @@
+*{margin: 0; padding: 0; font-family: "Microsoft JhengHei UI Light"; font-weight: 900;}
+html{
+  background-color: black;
+}
+table{
+display: flex;
+justify-content: center;
+margin: 0 auto;
+align-content: space-around;
+}
+td{
+  display: inline-flex;
+  
+}
+
+.button{
+  width: 40px;
+  height: 40px;
+  margin: 3px;
+  border-radius: 100%;
+  outline: none;
+  border: none;
+  background-color: #333333;
+  color: white;
+  transition: 0.3s
+}
+
+#output{
+  background-color: black;
+  color: white;
+  width: 184px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: end;
+  border: none;
+  text-align: right;
+
+}
+
+.zero{
+  width: 86px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 18px;
+  margin: 3px;
+  background-color: #333333;
+  color: white;
+  transition: 0.5s
+}
+.operators {
+  background-color: #ff8000;
+  color: white;
+}
+.helpers {
+  background-color:#b3b3b3;
+  color: black;
+}
+
+.button:active, .zero:active{
+  background-color: #a7a7a7
+  
+}
+.helpers:active{
+  background-color:#d6d6d6;
+}
+.operators:active{
+  background-color:#ffab58;
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <table>
+    <tr>
+      <td><input type="text" id="output" maxlength="15" disabled></td>
+    </tr>
+    <tr>
+      <td><input type="button" class='button helpers'value="С" onclick="reset()"></td>
+      <td><input type="button" class='button helpers' value="√" onclick="sqrt()"></td>
+      <td><input type="button" class='button helpers' value="←" onclick="change()"></td>
+      <td><input type="button" class="operators button" value="/"  onclick="btnValueToInput('/')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" class='button' value="7" onclick="btnValueToInput('7')"/></td>
+      <td><input type="button" class='button' value="8" onclick="btnValueToInput('8')"/></td>
+      <td><input type="button" class='button' value="9" onclick="btnValueToInput('9')"></td>
+      <td><input type="button" class='operators button' value="×" onclick="btnValueToInput('*')"></td>
+    </tr>
+    <tr>
+      <td><input type='button' class='button' value="4"  onclick="btnValueToInput('4')"></button></td>
+      <td><input type="button" class='button' value="5"  onclick="btnValueToInput('5')"></td>
+      <td><input type="button" class='button' value="6"  onclick="btnValueToInput('6')"></td>
+      <td><input type="button" class='operators button' value="-"  onclick="btnValueToInput('-')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" class='button' value="1"  onclick="btnValueToInput('1')"></td>
+      <td><input type="button" class='button' value="2"  onclick="btnValueToInput('2')"></td>
+      <td><input type="button" class='button' value="3"  onclick="btnValueToInput('3')"></td>
+      <td><input type="button" class ='operators button' value="+" onclick="btnValueToInput('+')"></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type='button' class='zero' value="0" onclick="btnValueToInput('0')"></td>
+      <td><input type="button" class='button' value="," onclick="btnValueToInput('.')"></td>
+      <td><input type='button' class='button operators'value="=" onclick="equal()"></td>
+    </tr>
+  </table>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
